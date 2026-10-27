@@ -1,0 +1,10 @@
+{
+	"name": "study-cloudflare-and-cms",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+	"mounts": [
+		"source=study-cloudflare-and-cms-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+	],
+	"postCreateCommand": "sudo chown node:node node_modules && npm ci",
+	"forwardPorts": [4321, 8976],
+	"remoteUser": "node"
+}
