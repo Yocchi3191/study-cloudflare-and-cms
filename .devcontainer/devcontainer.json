@@ -1,6 +1,6 @@
 {
 	"name": "study-cloudflare-and-cms",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
 	"mounts": [
 		"source=study-cloudflare-and-cms-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
 	],
