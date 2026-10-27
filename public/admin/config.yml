@@ -3,7 +3,10 @@ backend:
   repo: Yocchi3191/study-cloudflare-and-cms
   branch: main
 
-publish_mode: editorial_workflow
+publish_mode:
+  type: editorial_workflow
+  stages: [draft, pending_review]
+  direct_publish: false
 
 media_folder: public/images
 public_folder: /images
@@ -14,6 +17,7 @@ collections:
     folder: src/content/pages
     extension: md
     create: true
+    publish: false
     slug: "{{slug}}"
     fields:
       - { name: title, label: タイトル, widget: string }
