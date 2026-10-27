@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# Sveltia CMS copied from node_modules at build time
+public/admin/vendor/
 
 # dependencies
 node_modules/
